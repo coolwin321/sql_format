@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Formatter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SQL Formatter</h1>
+            <p>Format your SQL queries for scheduling by removing comments and normalizing whitespace</p>
+        </header>
+        
+        <div class="form-container">
+            <div class="input-section">
+                <div class="section-header">
+                    <h2>Input SQL</h2>
+                    <button id="clear-input" class="btn"><i class="fas fa-trash"></i> Clear</button>
+                </div>
+                <textarea id="input-sql" placeholder="Paste your SQL query here..."></textarea>
+            </div>
+            
+            <div class="button-group">
+                <button id="format-btn" class="btn primary"><i class="fas fa-magic"></i> Format SQL</button>
+                <button id="copy-btn" class="btn" disabled><i class="far fa-copy"></i> Copy to Clipboard</button>
+            </div>
+            
+            <div class="output-section">
+                <div class="section-header">
+                    <h2>Formatted SQL</h2>
+                    <span id="status" class="status"></span>
+                </div>
+                <div id="output-sql" class="output-box"></div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Created with ❤️ | <a href="https://github.com/yourusername/sql-formatter" target="_blank">View on GitHub</a></p>
+        </footer>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
